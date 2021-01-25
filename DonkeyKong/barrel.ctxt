@@ -1,7 +1,17 @@
 #BlueJ class context
 comment0.target=barrel
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ barrel\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ barrel\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment0.text=\r\n\ Fass\r\n\ \r\n\ Wird\ von\ Donkey\ Kong\ geworfen\r\n\ Kann\ rollen,\ springen\ und\ je\ nach\ Etage\ die\ Richtung\ \u00E4ndern\r\n\ \r\n\ @author\ Baruyr\r\n\ @version\ V1.0\r\n
+comment1.params=b
+comment1.target=barrel(java.lang.String)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ move()
+comment3.text=\r\n\ Bewegen\r\n\ Ermittelt\ Platform,\ damit\ das\ Fass\ immer\ auf\ dem\ Boden\ rollt\r\n\ X-Koordinate\ wird\ je\ nach\ Etage\ in\ +\ oder\ -\ Richtung\ versetzt\r\n\ Wenn\ am\ Rand\ angekommen,\ wird\ das\ Objekt\ entfernt\r\n
+comment4.params=
+comment4.target=void\ jump()
+comment4.text=\r\n\ Sprung\r\n\ Springt\ st\u00E4ndig\ wenn\ auf\ dem\ Boden\ angekommen\r\n\ Gleiches\ Prinzip\ wie\ plumber\r\n
+comment5.params=
+comment5.target=int\ getSpeed()
+comment5.text=\r\n\ Ermittelt\ Etage\ und\ setzt\ je\ nach\ dem\ (und\ je\ nach\ Level)\ die\ Geschwindigkeit\ ins\ Positive\ oder\ Negative\r\n
+numComments=6

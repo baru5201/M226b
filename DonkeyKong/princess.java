@@ -1,19 +1,47 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class princess here.
+ * Prinzessin
+ * Ziel des Spiels
+ * Steuert Levelfortschritt und Sieg
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Baruyr
+ * @version V1.0
  */
 public class princess extends Actor
 {
-    /**
-     * Act - do whatever the princess wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act() 
     {
-        // Add your action code here.
+        if (MyWorld.level == 1) 
+        {
+            if (isTouching(plumber.class))
+            {
+                ((MyWorld)getWorld()).nextLevel();
+            }
+        }
+        if (MyWorld.level == 2) win();
     }    
+    
+    /*
+     * Gewinnt das Spiel bei Berührung
+     * nur im 2. Level möglich
+     * Ein Endbildschirm wird angezeigt und die statischen Variabeln werden zurückgesetzt
+     * Spiel wird beendet
+     */
+    private void win()
+    {
+        if (getWorld() == null) 
+        {
+            return;
+        }
+        if(isTouching(plumber.class))
+        {
+            getWorld().showText("You Win!",getWorld().getWidth()/2,getWorld().getHeight()/2-30);
+            getWorld().showText("Final Score: " + (MyWorld.score + ((MyWorld)getWorld()).time/10),getWorld().getWidth()/2,getWorld().getHeight()/2+30);
+            plumber.lives = 3;
+            MyWorld.score = 0;
+            MyWorld.level = 1;
+            Greenfoot.stop();
+        }
+    }
 }

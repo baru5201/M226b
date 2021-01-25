@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=princess
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ princess\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Prinzessin\r\n\ Ziel\ des\ Spiels\r\n\ Steuert\ Levelfortschritt\ und\ Sieg\r\n\ \r\n\ @author\ Baruyr\r\n\ @version\ V1.0\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ princess\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment2.params=
+comment2.target=void\ win()
+comment2.text=\r\n\ Gewinnt\ das\ Spiel\ bei\ Ber\u00FChrung\r\n\ nur\ im\ 2.\ Level\ m\u00F6glich\r\n\ Ein\ Endbildschirm\ wird\ angezeigt\ und\ die\ statischen\ Variabeln\ werden\ zur\u00FCckgesetzt\r\n\ Spiel\ wird\ beendet\r\n
+numComments=3

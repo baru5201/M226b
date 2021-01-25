@@ -1,48 +1,78 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class platform here.
+ * Platform auf der sich der Spieler/Fässer bewegt
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Baruyr
+ * @version V1.0
  */
 public class platform extends Actor
 {
-    /**
-     * Act - do whatever the platform wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act() 
     {
         
     }    
     
+    /*
+     * Setzt die Rotation und Länge der Platform je nach Level
+     */
     public platform(int order)
     {
-        switch (order)
+        if (MyWorld.level == 1)
         {
-            case 1:
-                break;
-            case 2:
-                setRotation(-8);
-                getImage().scale(230, 8);
-                break;
-            case 3:
-                setRotation(4);
-                break;
-            case 4:
-                setRotation(4);
-                break;
-            case 5:
-                setRotation(-6);
-                break;
-            case 6:
-                setRotation(-6);
-                break;
-            case 7:
-                setRotation(4);
-                getImage().scale(170,8);
-                break;
+            switch (order)
+            {
+                case 1:
+                    break;
+                case 2:
+                    setRotation(-8);
+                    getImage().scale(230, 8);
+                    break;
+                case 3:
+                    setRotation(4);
+                    break;
+                case 4:
+                    setRotation(4);
+                    break;
+                case 5:
+                    setRotation(-6);
+                    break;
+                case 6:
+                    setRotation(-6);
+                    break;
+                case 7:
+                    setRotation(4);
+                    getImage().scale(170,8);
+                    break;
+            }
+        }
+        else
+        {
+            switch (order)
+            {
+                case 1:
+                    break;
+                case 2:
+                    setRotation(8);
+                    getImage().scale(230, 8);
+                    break;
+                case 3:
+                    setRotation(-4);
+                    break;
+                case 4:
+                    setRotation(-4);
+                    break;
+                case 5:
+                    setRotation(6);
+                    break;
+                case 6:
+                    setRotation(6);
+                    break;
+                case 7:
+                    setRotation(-4);
+                    getImage().scale(170,8);
+                    break;
+            }
         }
     }
 }
